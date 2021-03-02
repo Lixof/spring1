@@ -1,10 +1,18 @@
 package hiber.model;
 
+import hiber.service.CarService;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "users")
 public class User {
+
+   @OneToOne(cascade = CascadeType.ALL)
+   @PrimaryKeyJoinColumn
+   private Car car;
+   public Car getCar(){ return this.car; }
+   public void setCar(Car car){ this.car = car; }
 
    @Id
    @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,16 +29,16 @@ public class User {
 
    public User() {}
    
-   public User(String firstName, String lastName, String email) {
+   public User(String firstName, String lastName, String email, String model, int series) {
       this.firstName = firstName;
       this.lastName = lastName;
       this.email = email;
+      this.car = new Car(model, series);
    }
 
    public Long getId() {
       return id;
    }
-
    public void setId(Long id) {
       this.id = id;
    }
@@ -38,7 +46,6 @@ public class User {
    public String getFirstName() {
       return firstName;
    }
-
    public void setFirstName(String firstName) {
       this.firstName = firstName;
    }
@@ -46,7 +53,6 @@ public class User {
    public String getLastName() {
       return lastName;
    }
-
    public void setLastName(String lastName) {
       this.lastName = lastName;
    }
@@ -54,8 +60,9 @@ public class User {
    public String getEmail() {
       return email;
    }
-
    public void setEmail(String email) {
       this.email = email;
    }
+
+
 }
