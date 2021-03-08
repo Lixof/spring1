@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88812e5b-9964-466f-bfdd-47df47b70fa8" name="Default" comment="commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hiber/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hiber/MainApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hiber/dao/UserDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hiber/dao/UserDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hiber/MainApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hiber/MainApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hiber/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hiber/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hiber/dao/UserDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hiber/dao/UserDaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hiber/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hiber/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hiber/service/UserServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hiber/service/UserServiceImp.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -343,7 +345,7 @@
       <workItem from="1614674132617" duration="10737000" />
       <workItem from="1614717702326" duration="1436000" />
       <workItem from="1614763014917" duration="1720000" />
-      <workItem from="1614805680279" duration="2454000" />
+      <workItem from="1614805680279" duration="2826000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1614259233585</created>
@@ -359,7 +361,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614691678557</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit">
+      <created>1614809405489</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1614809405489</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
