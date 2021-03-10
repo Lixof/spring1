@@ -32,6 +32,12 @@ public class UserServiceImp implements UserService {
       return userDao.getUser(model, series);
    }
 
+   @Transactional(readOnly = true)
+   @Override
+   public User getUser(Long id) {
+      return userDao.getUser(id);
+   }
+
 
 
 }

@@ -64,5 +64,9 @@ public class User {
       this.email = email;
    }
 
+   public String getModel() { return this.car.getModel(); }
+
+   public int getSeries() { return this.car.getSeries(); }
+
 
 }
