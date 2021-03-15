@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring_hibernate" />
+        <module name="spring-mvc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="spring_hibernate" target="1.8" />
+      <module name="spring-mvc" target="1.8" />
+      <module name="spring1" target="15" />
     </bytecodeTargetLevel>
   </component>
 </project>
