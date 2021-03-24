@@ -29,7 +29,7 @@ public class UserDaoImp implements UserDao {
    }
 
    @Override
-   public User getUser(String model, int series) {
+   public User getUserByCar(String model, int series) {
       Query carQuery = sessionFactory.getCurrentSession().createQuery("from Car where model = :paramModel and series = :paramSeries" );
       carQuery.setParameter("paramModel", model);
       carQuery.setParameter("paramSeries", series);
@@ -38,7 +38,7 @@ public class UserDaoImp implements UserDao {
    }
 
    @Override
-   public User getUser(Long id) {
+   public User getUserById(Long id) {
       Query userQuery = sessionFactory.getCurrentSession().createQuery("from User where id = :paramId" );
       userQuery.setParameter("paramId", id);
       List<User> users = userQuery.getResultList();
